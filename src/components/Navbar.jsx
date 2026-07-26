@@ -26,12 +26,10 @@ const Navbar = () => {
         >
             <div className="app-container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 2rem' }}>
                 <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '15px', textDecoration: 'none', color: 'white' }}>
-                    <motion.img
+                    <img
                         src="./brand/logo.png"
                         alt="景深之外"
-                        style={{ height: '56px', width: '56px', objectFit: 'contain' }}
-                        whileHover={{ rotate: 180 }}
-                        transition={{ duration: 0.6 }}
+                        style={{ height: '112px', width: '112px', objectFit: 'contain' }}
                     />
                 </a>
                 <div style={{ display: 'flex', gap: '32px' }}>
