@@ -1,0 +1,114 @@
+:root {
+  --primary-bg: #050507;
+  --secondary-bg: #0d0d12;
+  --card-bg: rgba(18, 18, 24, 0.7);
+  --primary-text: #f4f4f7;
+  --secondary-text: #9a9ab0;
+  --accent: #ffffff;
+  --accent-amber: #C8B098;
+  --accent-amber-glow: rgba(200, 176, 152, 0.25);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-amber: rgba(200, 176, 152, 0.3);
+}
+
+body {
+  margin: 0;
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(200, 176, 152, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-amber);
+}
+
+/* Glassmorphism helpers */
+.glass {
+  background: rgba(13, 13, 18, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+}
+
+.glass-card {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: var(--border-amber);
+  box-shadow: 0 12px 40px -10px var(--accent-amber-glow);
+}
+
+.glass-amber {
+  background: linear-gradient(135deg, rgba(200, 176, 152, 0.08) 0%, rgba(200, 176, 152, 0.02) 100%);
+  border: 1px solid var(--border-amber);
+}
+
+/* Premium gradient text */
+.text-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-amber {
+  background: linear-gradient(135deg, #ffffff 0%, #C8B098 50%, #8c735c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Badge/Tag */
+.badge-amber {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: rgba(200, 176, 152, 0.12);
+  border: 1px solid rgba(200, 176, 152, 0.3);
+  color: var(--accent-amber);
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(3, 3, 5, 0.85);
+  backdrop-filter: blur(16px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}

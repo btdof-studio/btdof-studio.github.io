@@ -1,0 +1,12 @@
+.app-container {
+  max-width: 1700px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.page-section {
+  padding: 6rem 1.5rem;
+  width: 100%;
+}
