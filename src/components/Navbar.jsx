@@ -19,7 +19,7 @@ const Navbar = () => {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             style={{
                 position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50,
-                height: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                height: '120px', display: 'flex', alignItems: 'center', justifyContent: 'center',
                 transition: 'all 0.3s ease'
             }}
             className={scrolled ? 'glass' : ''}
@@ -29,7 +29,7 @@ const Navbar = () => {
                     <img
                         src="./brand/logo.png"
                         alt="景深之外"
-                        style={{ height: '112px', width: '112px', objectFit: 'contain' }}
+                        style={{ height: '224px', width: '224px', objectFit: 'contain' }}
                     />
                 </a>
                 <div style={{ display: 'flex', gap: '32px' }}>
